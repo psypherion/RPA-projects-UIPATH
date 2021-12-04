@@ -1,0 +1,522 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1103,5856" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="44">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1113,5791" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="say" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="datatable" />
+      <Variable x:TypeArguments="x:String" Name="pdfData" />
+      <Variable x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Name="det" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dataBase" />
+      <Variable x:TypeArguments="x:Int32" Name="counter" />
+      <Variable x:TypeArguments="s:String[]" Name="attachment" />
+      <Variable x:TypeArguments="x:String" Name="pass" />
+      <Variable x:TypeArguments="x:String" Name="passwd" />
+      <Variable x:TypeArguments="s:String[]" Name="folderPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="1071,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[folderPath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("E:\Projects\RPA PROJECTS\Project-1\data")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:GetPassword DisplayName="Email Password" sap:VirtualizedContainerService.HintSize="1071,22" sap2010:WorkflowViewState.IdRef="GetPassword_2" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATd7czyzZ6EisKL/Uwi3diwAAAAACAAAAAAAQZgAAAAEAACAAAABFUl6F20pV4v3GC28woYwZVIWlB7QekgMQj+xjRlCiiAAAAAAOgAAAAAIAACAAAADOcrWRdjWIfH+Ux3QfKjBHgfuxfe19kgb7zxeFJ0lQhBAAAABgWv+/78IgjEdJPzOxuWZmQAAAABmesIJeWlwqvf4mxH4jljYkoDCMgTZHNdLS3nEtcwuFtiHG5L3sH+WqLFtnpO2VvUkCfuI/NZlmVSnAiahqf74=" Result="[passwd]" />
+    <Assign sap2010:Annotation.AnnotationText="Initializing a counter for future use in EXCEL FILE&#xA;" DisplayName="Assign" sap:VirtualizedContainerService.HintSize="1071,117" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">2</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Here we're only looping through the &#xA;each file paths &#xA;i.e, PDF's paths present in the given folder" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1071,5150" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[folderPath]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1035,4969" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If sap2010:Annotation.AnnotationText="It is possible that there can be other files too.&#xA;But only PDF files are our main concern so, with this if condition we're checking if the file path contains &quot;.pdf&quot; extension or not." Condition="[item.ToString.Contains(&quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="993,4877" sap2010:WorkflowViewState.IdRef="If_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="957,4658" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="With this Start Process activity PDF's are getting opened to be read by the UI Path." DisplayName="Openning PDFs" FileName="[item.ToString]" sap:VirtualizedContainerService.HintSize="915,129" sap2010:WorkflowViewState.IdRef="StartProcess_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:StartProcess>
+                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" sap2010:Annotation.AnnotationText="Targetting only the specific window.&#xA;" DisplayName="Attach Window 'acrobat.exe Sayan'" sap:VirtualizedContainerService.HintSize="915,4397" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="3b827d0727f8d9523c9ce5f53cbcb3ed" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' /&gt;">
+                    <ui:WindowScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="881,4209" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="mailId" />
+                            <Variable x:TypeArguments="x:String" Name="organization" />
+                            <Variable x:TypeArguments="x:String" Name="name" />
+                            <Variable x:TypeArguments="x:String" Name="startingDate" />
+                            <Variable x:TypeArguments="x:String" Name="InternshipTime" />
+                            <Variable x:TypeArguments="x:String" Name="prog" />
+                            <Variable x:TypeArguments="x:String" Name="fullName" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:AnchorBase AnchorPosition="Left" sap2010:Annotation.AnnotationText="Using Anchoring,&#xA;The word ear is anchored and on the basis of that the rest of the line is read using OCR technique (MICROSOFT OCR)" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="839,302" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+                            <ui:AnchorBase.Action>
+                              <ActivityAction x:TypeArguments="ui:Anchor">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                                </ActivityAction.Argument>
+                                <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'document'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_2">
+                                  <ui:GetOCRText.OCREngine>
+                                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                                      <ActivityFunc.Argument>
+                                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                      </ActivityFunc.Argument>
+                                      <ui:MicrosoftOCR FilterRegion="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_2" Image="[Image]" />
+                                    </ActivityFunc>
+                                  </ui:GetOCRText.OCREngine>
+                                  <ui:GetOCRText.Target>
+                                    <ui:Target Element="{x:Null}" Id="73903151-1c89-4e5d-8694-d5c0ffaa9abe" InformativeScreenshot="05dcd9dd8e24e78636c76e259cf399a6" Selector="&lt;ctrl role='document' /&gt;">
+                                      <ui:Target.ClippingRegion>
+                                        <ui:Region Rectangle="92, 305, 446, 33" />
+                                      </ui:Target.ClippingRegion>
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:GetOCRText.Target>
+                                  <ui:GetOCRText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+                                  </ui:GetOCRText.Text>
+                                </ui:GetOCRText>
+                              </ActivityAction>
+                            </ui:AnchorBase.Action>
+                            <ui:AnchorBase.AnchorProvider>
+                              <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'document'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                                <ui:WaitUiElementAppear.Target>
+                                  <ui:Target Element="{x:Null}" Id="193f320b-924c-45ff-9896-89d6dd25f892" InformativeScreenshot="371b1c5a672c3f57b1d4e2b0b527f05b" Selector="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='document' /&gt;">
+                                    <ui:Target.ClippingRegion>
+                                      <ui:Region Rectangle="38, 300, 58, 46" />
+                                    </ui:Target.ClippingRegion>
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:WaitUiElementAppear.Target>
+                              </ui:WaitUiElementAppear>
+                            </ui:AnchorBase.AnchorProvider>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:AnchorBase>
+                          <Assign sap2010:Annotation.AnnotationText="Rest of the line is splitted on basis of a comma and the first part is used." sap:VirtualizedContainerService.HintSize="839,102" sap2010:WorkflowViewState.IdRef="Assign_11">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[fullName]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[name.Split(","c)(0)]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <ui:ReadPDFText PreserveFormatting="{x:Null}" sap2010:Annotation.AnnotationText="The whole PDF's text data is being read." DisplayName="Read PDF Text" FileName="[item.ToString]" sap:VirtualizedContainerService.HintSize="839,90" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[pdfData]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ReadPDFText>
+                          <ui:GenerateDataTable ColumnSeparators="{x:Null}" ColumnSizes="{x:Null}" NewLineSeparator="{x:Null}" Positions="{x:Null}" sap2010:Annotation.AnnotationText="The whole text data available in the PDF is stored in a datatable" DataTable="[datatable]" DisplayName="Generate Data Table" sap:VirtualizedContainerService.HintSize="839,231" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="[pdfData]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:GenerateDataTable>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Checking each line of datatable created with the PDF's text&#xA;" DataTable="[datatable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="839,3232" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd1:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurrentRow" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="805,3071" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:IfElseIf sap2010:Annotation.AnnotationText="With few else if condition &#xA;data related to&#xA;1.Email ID&#xA;2.Organization&#xA;3.Internship Starting Date&#xA;4.Internship Topic&#xA;5.Internship Period &#xA;is collected." DisplayName="Else If" sap:VirtualizedContainerService.HintSize="763,1711" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                                    <ui:IfElseIf.ConditionBlocks>
+                                      <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                        <ui:IfElseIfBlock BlockType="If" Condition="[CurrentRow(0).ToString.Contains(&quot;@&quot;) And not CurrentRow(0).ToString.Contains(&quot;tcrinnovation&quot;)]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[mailId]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CurrentRow(0).ToString.Contains(&quot;College&quot;) Or CurrentRow(0).ToString.Contains(&quot;University&quot;) Or CurrentRow(0).ToString.Contains(&quot;Institute&quot;) Or CurrentRow(0).ToString.Contains(&quot;UNIVERSITY&quot;) Or CurrentRow(0).ToString.Contains(&quot;IT&quot;) Or CurrentRow(0).ToString.Contains(&quot;COLLEGE&quot;) Or CurrentRow(0).ToString.Contains(&quot;college&quot;) Or CurrentRow(0).ToString.Contains(&quot;university&quot;) Or CurrentRow(0).ToString.Contains(&quot;institute&quot;)]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[organization]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CurrentRow(0).ToString.Contains(&quot;Start Date&quot;)]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[startingDate]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString.Split(":"c)(1)]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CurrentRow(0).ToString.Contains(&quot;Period Of Intern&quot;)]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[InternshipTime]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString.Split(":"c)(1)]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CurrentRow(0).ToString.Contains(&quot;Program&quot;)]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[prog]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString.Split(":"c)(1)]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                        <ui:IfElseIfBlock BlockType="Else">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_6" />
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                      </sc:BindingList>
+                                    </ui:IfElseIf.ConditionBlocks>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:IfElseIf>
+                                  <If sap2010:Annotation.AnnotationText="PLEASE IGNORE THIS ANNOTATION&#xA;unless you want to really understand what's going on here.&#xA;&#xA;While handling errors I found out as I was trying to write rows of the excel file within the previous loop, I started facing all the outputs of else if conditions that is I was getting a row containing only name and org then only name org and let mailid and etc. But I wanted Only one Row where None of the cell will have  Null value. &#xA;That's why Here I am checking for the Null values and in else part that is there won't be any row having any null values and hence a proper data table and the desired excel sheet." Condition="[String.IsNullOrEmpty(mailId) or String.IsNullOrEmpty(fullName) or String.IsNullOrEmpty(organization) or String.IsNullOrEmpty(startingDate) or String.IsNullOrEmpty(InternshipTime) or String.IsNullOrEmpty(prog)]" sap:VirtualizedContainerService.HintSize="763,1228" sap2010:WorkflowViewState.IdRef="If_11">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_7" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="476,939" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:BuildDataTable sap2010:Annotation.AnnotationText="Basic Structure of the Data Table." DataTable="[dataBase]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Organization&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Internship_x0020_Program&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Internship_x0020_Start_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Internship_x0020_Period&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:BuildDataTable>
+                                        <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Adding single row to the data table." ArrayRow="[{name,organization,mailId,prog,startingDate,InternshipTime}]" DataTable="[dataBase]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:AddDataRow>
+                                        <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Openning the excel sheet and appending each row in the data table while upgrading the position of the desired row number." DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,461" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="E:\Projects\RPA PROJECTS\Project-1\data.xlsx">
+                                          <ui:ExcelApplicationScope.Body>
+                                            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,310" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:ExcelWriteRange AddHeaders="False" DataTable="[dataBase]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="[“A”+counter.ToString]" />
+                                                <Assign sap2010:Annotation.AnnotationText="Updating the count" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ExcelApplicationScope.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:ExcelApplicationScope>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEachRow>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:WindowScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:WindowScope>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Sending a mail containing excel sheet that contains all the data." Body="Please, open the attachment" DisplayName="Send SMTP Mail Message" Email="williamskyle562@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="1071,190" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[passwd]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Here's the Intern's list : " To="williamskyle6969@gmail.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String">E:\Projects\RPA PROJECTS\Project-1\data.xlsx</Literal>
+          </InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:SendMail>
+  </Sequence>
+</Activity>

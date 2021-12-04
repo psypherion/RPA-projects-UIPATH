@@ -1,0 +1,5 @@
+1.frequency
+2.freq distribution
+3.class boundary and class limit
+4.relative frequency
+5.freq density
